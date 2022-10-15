@@ -3,5 +3,4 @@ Projeto realizado como atividade da disciplina de Aplicações Distribuídas com
 
 Integrantes do Grupo:
   Nome: Caio Soares Paiva Prontuário: GU3011143
-  Nome: Mayara Sarmento Paes Prontuário: GU3012654
   Nome: Pedro Henrique Zambão Leite Prontuário: GU301262X

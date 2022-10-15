@@ -15,7 +15,7 @@ public class TesteConsumidorFila {
         Connection connection = factory.createConnection("user", "senha");
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-
+        //Consumo das mensagens de log da fila
         Destination fila = (Destination) context.lookup("LOG");
         MessageConsumer consumer = session.createConsumer(fila);
 

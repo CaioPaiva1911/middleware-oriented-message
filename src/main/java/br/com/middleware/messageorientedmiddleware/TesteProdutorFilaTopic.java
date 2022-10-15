@@ -53,6 +53,7 @@ public class TesteProdutorFilaTopic {
                         + promocao
                         + "</promocao><id>" + i + "</id></pedido>");
                 MessageProducer producer = session.createProducer(topico);
+                //Define a propriedade que será utilizada como parâmetro de filtro pelo consumidor
                 message.setBooleanProperty(promocao, true);
                 producer.send(message);
 

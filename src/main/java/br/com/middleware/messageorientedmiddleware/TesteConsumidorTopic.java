@@ -18,7 +18,7 @@ public class TesteConsumidorTopic {
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
         Topic topic = (Topic) context.lookup("pedidos");
-
+        //Irá consumir somente as mensagens de promoção do dia das crianças
         MessageConsumer consumer = session.createDurableSubscriber(topic, "promocao", "DiaDasCriancas=true",true);
 
         consumer.setMessageListener(message -> {
